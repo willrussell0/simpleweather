@@ -4,12 +4,12 @@ navigator.geolocation.getCurrentPosition(success,error);
 }
 else {
 $('#error').html('Geolocation is not supported');
-$('#img').attr('src', 'images/what.png');
+$('#img').attr('src', 'images/2what.png');
 }
 
 function error() {
   $( ".spinner" ).hide();
-$('#img').attr('src', 'images/what.png');
+$('#img').attr('src', 'images/2what.png');
 $('#error').html('Location not found. Refresh?');
 }
 
@@ -32,7 +32,7 @@ $.getJSON(url, function (json) {
     var loc = latjson + ',' +longjson;
     var town = json.current_observation.display_location.full;
 
-   var finalurl = 'images/' + img + '.png';
+   var finalurl = 'images/2' + img + '.png';
 
 
 $( ".spinner" ).hide();
